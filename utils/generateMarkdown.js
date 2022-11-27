@@ -11,8 +11,49 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
+  return `
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  
+  
+  # ${answers.projectTitle}
+  ${answers.license} 
+
+
+  ## Description
+  ${answers.description}
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Test](#test)
+  * [Questions](#question)
+
+
+  ## Installation
+  To install nescessary dependencies, run the following command
+  \`\`\`
+  ${answers.iDependencies}
+  \`\`\`
+ 
+
+  ## Usage
+  ${answers.usage}
+
+  ## License
+
+
+  ## Contributing
+
+
+  ## Test
+
+
+
+  ## Question
+  If you have anyquestions about the repo, open and issue or contact me directly at linhklatt@yahoo.com. You can find more of my works at [linhklatt](email)
 
 `;
 }
