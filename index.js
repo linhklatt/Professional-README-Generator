@@ -2,7 +2,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateReadme = require("./utils/generateMarkdown");
-const util = require("util");
+// const util = require("util");
 // TODO: Create an array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
@@ -39,16 +39,14 @@ const promptUser = () => {
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     },
     {
-      type: "list", //WHAT TYPE?
+      type: "input", //WHAT TYPE?
       message: "What command should be run to install dependencies?",
       name: "iDependencies",
-      choices: ["npm i"],
     },
     {
-      type: "list", //WHAT TYPE
+      type: "input", //WHAT TYPE
       message: "What command should be run to run tests?",
       name: "testsCommand",
-      choices: ["npm test"],
     },
     {
       type: "input",
@@ -70,7 +68,11 @@ const promptUser = () => {
 // TODO: Create a function to initialize app
 const init = () => {
   promptUser()
-    .then((answers) => fs.writeFile("README.md"), generateReadme(answers))
+    .then((answers) => {
+      fs.writeFile("README.md", generateReadme(answers), (err) => {
+        if (err) throw err;
+      });
+    })
     .then(() => console.log("Successfully wrote to README.md"))
     .catch((err) => console.error(err));
 };
