@@ -39,12 +39,12 @@ const promptUser = () => {
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
     },
     {
-      type: "input", //WHAT TYPE?
+      type: "input", 
       message: "What command should be run to install dependencies?",
       name: "iDependencies",
     },
     {
-      type: "input", //WHAT TYPE
+      type: "input", 
       message: "What command should be run to run tests?",
       name: "testsCommand",
     },
@@ -62,10 +62,9 @@ const promptUser = () => {
   ]);
 };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+
+// Create a function to initialize app
 const init = () => {
   promptUser()
     .then((answers) => {

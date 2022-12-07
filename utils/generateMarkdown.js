@@ -13,11 +13,11 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   return `
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
   
   
 # ${answers.projectTitle}
-${answers.license} 
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
 ## Description
@@ -46,14 +46,14 @@ ${answers.guide}
 ${answers.license} 
 
 ## Contributing
-${answers.UserContribution} 
+${answers.userContribution} 
 
 ## Test
 ${answers.testsCommand}
 
 
   ## Question
-  If you have anyquestions about the repo, open and issue or contact me directly at ${answers.email}. You can find more of my works at [linhklatt](email)
+  If you have anyquestions about the repo, open and issue or contact me directly at ${answers.email}. You can find more of my works at [linhklatt](email).
 
 `;
 }

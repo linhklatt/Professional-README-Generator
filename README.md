@@ -1,13 +1,13 @@
 
+
+  
+  
+# Professional README Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-  
-  
-# Generate README
-MIT 
 
 
 ## Description
-abs
+This professional README generator was created by using Node.js and inquirer package which allow user able to generate file to README.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -26,13 +26,13 @@ npm i
  
 
 ## Usage
-abc
+Navigate to the repo in the terminal(for iOS user)/ Git Bash (for Windows user). Install the package ( in this case is inquirer), then run the command "node index.js" and answer all the prompts. When you finish all the question the application will automatic generate all the answer and write it to the README file.  
 
 ## License
 MIT 
 
 ## Contributing
-undefined 
+This work is done by Linh Klatt 
 
 ## Test
 npm test
