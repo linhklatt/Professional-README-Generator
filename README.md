@@ -19,7 +19,7 @@ This professional README generator was created by using Node.js and inquirer pac
 
 
 ## Installation
-To install nescessary dependencies, run the following command
+To install necessary dependencies, run the following command
 ```
 npm i
 ```
@@ -39,5 +39,5 @@ npm test
 
 
   ## Question
-  If you have anyquestions about the repo, open and issue or contact me directly at linhklatt@yahoo.com. You can find more of my works at [linhklatt](email)
+  If you have any questions about the repo, open and issue or contact me directly at linhklatt@yahoo.com. You can find more of my works at [linhklatt](email)
 

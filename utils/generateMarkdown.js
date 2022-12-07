@@ -53,7 +53,7 @@ ${answers.testsCommand}
 
 
   ## Question
-  If you have anyquestions about the repo, open and issue or contact me directly at ${answers.email}. You can find more of my works at [linhklatt](email).
+  If you have any questions about the repo, open and issue or contact me directly at ${answers.email}. You can find more of my works at [linhklatt](email).
 
 `;
 }
